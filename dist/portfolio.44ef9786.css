@@ -199,9 +199,10 @@
 @media screen and (max-width: 650px) {
   .ProjectNumber {
     font-size: 2vw;
-    margin-top: 5px; }
+    margin-top: -3px; }
   .ProjectDescription {
-    font-size: 2vw; } }
+    font-size: 2vw;
+    margin-top: 5px; } }
 
 @media screen and (max-width: 550px) {
   .PortfolioProjects {

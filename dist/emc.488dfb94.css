@@ -1,0 +1,44 @@
+.EMCHero {
+  background: url("/Project2-Hero.f1fbd2c1.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.EMC-SideBySide {
+  background: url("/Specialized-SidebySide.80f67e71.jpg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.EMC-Desktop1 {
+  background: url("/Specialized-DesktopLanding.bb54cc85.png");
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat; }
+
+.EMC-Desktop2 {
+  background: url("/Specialized-Desktop2.00abce5d.jpg");
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat; }
+
+.EMC-Responsive1 {
+  background: url("/Specialized-Responsive1.84660205.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.EMC-Responsive3 {
+  background: url("/Specialized-Responsive3.cba5bd90.jpg");
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.EMC-Responsive4 {
+  background: url("/Specialized-Responsive4Big.7b4acaf3.jpg");
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+
+/*# sourceMappingURL=/emc.488dfb94.css.map */

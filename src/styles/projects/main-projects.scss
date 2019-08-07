@@ -18,6 +18,9 @@
 
 
 
+
+
+
     /* ---- Project Intro --------------- */
     .ProjectPageTitle {
     margin-top: 150px;
@@ -78,6 +81,19 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
     /* ---- Project Hero --------------- */
     .ProjectPageImage-Hero {
         width: 100%;
@@ -90,6 +106,18 @@
                 margin-bottom: 80px;
             }
         }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -167,6 +195,20 @@
                 flex-direction: column-reverse;
             }
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
             /* ---- Project Section 2 - Desktop View --------------- */
             .ProjectPageSection2 {
@@ -259,6 +301,19 @@
         }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
     /* ---- Project Section 3 - Build Description --------------- */
         .ProjectPageSection3 {
             width: 100%;
@@ -301,7 +356,26 @@
             }
         }
 
+        @media screen and (max-width: 470px){
+            .ProjectPageSection3LanguagesRow {
+                width: 100%;
+            }   
+        }
+
     
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     /* ---- Project Section 4 - Responsive Displays --------------- */
@@ -395,6 +469,44 @@
                     opacity: .95;
                 }
 
+            
+        @media screen and (max-width: 800px){
+            .ProjectPageSection4 {
+                margin-bottom: 80px;
+            }
+            .ProjectPageSection4Wrap {
+                flex-direction: column;
+            }
+            .ProjectPageSection4Left {
+                width: 100%;
+            }
+            .ProjectPageSection4-DisplaysWrap {
+                display: none;
+            }
+            .ProjectPageSection4Right {
+                width: 100%;
+                height: 100vw;
+            }
+            .ProjectPageSection4MobileDisplay {
+                width: 50%;
+            }
+            .ProjectPageSection4-Text {
+                margin-bottom: 10px;
+                max-width: 100%;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
 
     /* ---- Project Closing --------------- */
         .ProjectPage-Closing {
@@ -418,42 +530,31 @@
                     color: #c0dde1;
                 }
 
+        @media screen and (max-width: 1000px){
+            .ProjectPage-Closing {
+                margin-top: 0;
+            }
+            .ProjectPage-ClosingProjectTitle {
+                font-size: 12vw;
+                margin: 1.3vw 0;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     /* ---- Footer --------------- */
         .FooterProject {
             position: relative;
             padding-left: 0;
         }
-
-
-
-
-
-
-
-
-
-
-                
-
-        
-
-        
-
-        @media screen and (max-width: 600px){
-            .DesktopWindowBrowser-Menu {
-                width: 30px;
-            }
-            .DesktopWindowBrowser-MenuIcon {
-                width: 6px;
-                height: 6px;
-            }
-        }
-
-
-
-
-
-        @media screen and (max-width: 1000px){
-    
-}

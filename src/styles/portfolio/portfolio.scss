@@ -210,8 +210,6 @@
 
             }
                     .ProjectLink:hover {
-                        // color: rgb(133, 133, 133);
-                        // color: rgb(222, 189, 199);
                         opacity: .6;
                     }
                     
@@ -260,10 +258,11 @@
                 @media screen and (max-width: 650px){
                     .ProjectNumber {
                         font-size: 2vw;
-                        margin-top: 5px;
+                        margin-top: -3px;
                     }
                     .ProjectDescription {
                         font-size: 2vw;
+                        margin-top: 5px;
                     }
                 }
 
