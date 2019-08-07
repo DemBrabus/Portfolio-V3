@@ -1,0 +1,330 @@
+.Portfolio {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+            .WindowWrap {
+                width: 100%;
+                height: 100vh;
+                position: fixed;
+                top: 0;
+                left: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 10;
+            }
+
+            .Window {
+                width: 65vw;
+                height: 70vh;
+                position: relative;
+                transition: height .5s ease-in-out;
+                transition: opacity .7s ease-in-out;
+            }
+
+            .Cloud {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                z-index: 1;
+                transition: opacity .7s ease-in-out;
+            }
+
+                .Project1Window {
+                background: url('../../Assets/Images/StarckThumbNail.jpg');
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                border-radius: 2px;
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.311);
+                opacity: .85;
+                z-index: 5;
+                }
+
+                .Project2Window {
+                    background: url('../../Assets/Images/SpecializedThumbNail.jpg');
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    border-radius: 2px;
+                    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.311);
+                    opacity: .95;
+                    z-index: 5;
+                }
+
+                .Project3Window {
+                    background: url('../../Assets/Images/EMCThumbNail.jpg');
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    border-radius: 2px;
+                    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.311);
+                    opacity: .85;
+                    z-index: 5;
+                }
+
+                .Project4Window {
+                    background: url('../../Assets/Images/SaporiThumbNail.jpg');
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    border-radius: 2px;
+                    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.311);
+                    opacity: .95;
+                    z-index: 5;
+                }
+
+                
+                
+
+            @media screen and (max-width: 650px){
+                .Window {
+                    height: 50vh;
+                }
+            }
+
+
+    .PortfolioContent {
+        width: 100%;
+        position: absolute;
+        padding: 0 10%;
+        z-index: 20;
+    }
+
+    .PortfolioInner {
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+    /* -- Title ------------------------ */
+        .PortfolioTitle {
+            margin-top: 100px;
+            font-size: 130px;
+            display: inline-block;
+        }
+
+            @media screen and (max-width: 1260px){
+                .PortfolioTitle {
+                font-size: 90px;
+                }
+            }
+
+            @media screen and (max-width: 500px){
+                .PortfolioTitle {
+                    font-size: 50px;
+                }
+            }
+
+    
+    /* -- Context ------------------------ */
+        .PortfolioContext {
+            width: 75vw;
+            max-width: 1400px;
+            margin-top: 70px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+            .PortfolioContext-Title {
+                white-space: nowrap;
+                width: 500px;
+                font-size: 17px;
+            }
+
+            .PortfolioContext-Wrap {
+                width: 600px;
+            }
+
+            .PortfolioContext-Text {
+                
+                font-size: 17px;
+                line-height: 28px;
+                color: rgb(167, 167, 167);
+            }
+                #PortfolioContext-Text2 {
+                    color: #E6E6E6;
+                }
+
+                @media screen and (max-width: 800px) {
+                    .PortfolioContext {
+                        flex-direction: column;
+                    }
+                    .PortfolioContext-Title {
+                        width: 100%;
+                        margin-bottom: 20px;
+                        font-size: 14px;
+                    }
+                    .PortfolioContext-Wrap {
+                        width: 100%;
+                    }
+                    .PortfolioContext-Text {
+                        font-size: 14px;
+                    }
+                    
+                }
+
+        /* -- Project Links ------------------------ */
+            .PortfolioProjects {
+                margin-top: 110px;
+                transition: margin-top .5s ease-in-out;
+            }
+            .PortfolioProjectsTitle {
+                font-size: 10px;
+                font-weight: 200;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+            }
+
+            .ProjectList {
+
+            }
+
+            .Project {
+                margin-bottom: 50px;
+                position: relative;
+            }
+
+            .ProjectNumber {
+                position: absolute;
+                font-size: 13px;
+                font-weight: 400;
+                margin-top: 5px;
+                color: rgb(167, 167, 167);
+                transition: margin-top .5s ease-in-out;
+            }
+
+            .ProjectLink {
+                font-size: 150px;
+                font-family: aktiv-grotesk-condensed, sans-serif;
+                font-weight: 900;
+                font-style: normal;
+                text-transform: uppercase;
+                outline: none;
+                opacity: 1;
+                transition: transform opacity 2s ease-in-out;
+
+            }
+                    .ProjectLink:hover {
+                        // color: rgb(133, 133, 133);
+                        // color: rgb(222, 189, 199);
+                        opacity: .6;
+                    }
+                    
+
+            .ProjectDescription {
+                font-size: 13px;
+                text-transform: uppercase;
+                margin-top: -10px;
+                margin-left: 5px;
+                color: rgb(167, 167, 167);
+            }
+
+                    
+
+                @media screen and (max-width: 1732px){
+                    .PortfolioProjects {
+                        margin-top: 170px;
+                    }
+                }
+
+                @media screen and (max-width: 1261px){
+                    .PortfolioProjects {
+                        margin-top: 200px;
+                    }
+                }
+
+                @media screen and (max-width: 1020px){
+                    .ProjectLink {
+                        font-size: 14vw;
+                    }
+                }
+
+                 @media screen and (max-width: 800px){
+                    .PortfolioProjects {
+                        margin-top: 100px;
+                    }
+                }
+
+                @media screen and (max-width: 696px){
+                    .PortfolioProjects {
+                        margin-top: 140px;
+                    }
+                }
+                
+
+                @media screen and (max-width: 650px){
+                    .ProjectNumber {
+                        font-size: 2vw;
+                        margin-top: 5px;
+                    }
+                    .ProjectDescription {
+                        font-size: 2vw;
+                    }
+                }
+
+                @media screen and (max-width: 550px){
+                    .PortfolioProjects {
+                        margin-top: 80px;
+                    }
+                }
+
+                @media screen and (max-height: 800px) {
+                    .PortfolioProjects {
+                        margin-top: 130px;
+                    }
+                }
+
+
+
+
+        /* -- Connect ------------------------ */
+            .PortfolioConnect {
+                margin-top: 140px;
+                margin-bottom: 280px;
+            }
+
+                .PortfolioConnect-TextBox {
+                    width: 600px;
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                .PortfolioConnect-Email {
+                    font-size: 14px;
+                    font-weight: 200;
+                }
+
+                .PortfolioConnect-SocialWrap {
+                    width: 300px;
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                .SocialTag {
+                    font-size: 14px;
+                    font-weight: 200;
+                }
+                    .SocialTag:hover {
+                        color: #FFF;
+                        font-weight: 700;
+                    }
+
+
+
+
+            @media screen and (max-width: 780px){
+                .PortfolioConnect-TextBox {
+                    flex-direction: column;
+                }
+                .PortfolioConnect-Email {
+                    margin-bottom: 30px;
+                }
+                .PortfolioConnect-SocialWrap {
+                    width: 230px;
+                }
+            }
