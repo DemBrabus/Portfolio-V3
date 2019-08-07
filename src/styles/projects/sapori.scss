@@ -2,7 +2,7 @@
 
 // Hero
     .SaporiHero {
-        background: url('../../assets/images/specialized/Project2-Hero.png');
+        background: url('../../assets/images/sapori/Project4-Hero.png');
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -10,7 +10,7 @@
 
 // Side By Side
     .Sapori-SideBySide {
-        background: url('../../assets/images/specialized/Specialized-SidebySide.jpg');
+        background: url('../../assets/images/sapori/Project4-Image1.png');
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -20,7 +20,7 @@
 // Desktop View
 
     .Sapori-Desktop1 {
-        background: url('../../assets/images/specialized/Specialized-DesktopLanding.png');
+        background: url('../../assets/images/sapori/Project4-DesktopView1.png');
         background-size: contain;
         background-position: top;
         background-repeat: no-repeat;
@@ -36,21 +36,28 @@
 
 //Responsive Display 
     .Sapori-Responsive1 {
-        background: url('../../assets/images/specialized/Specialized-Responsive1.jpg');
+        background: url('../../assets/images/sapori/Project4-DesktopView1.png');
         background-position: top;
         background-size: cover;
         background-repeat: no-repeat;
     }
 
     .Sapori-Responsive3 {
-        background: url('../../assets/images/specialized/Specialized-Responsive3.jpg');
+        background: url('../../assets/images/sapori/Project4-Responsive3.png');
         background-position: top;
         background-size: contain;
         background-repeat: no-repeat;
     }
 
     .Sapori-Responsive4 {
-        background: url('../../assets/images/specialized/Specialized-Responsive4Big.jpg');
+        background: url('../../assets/images/sapori/Project4-Responsive4.png');
+        background-position: top;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .EMC-MobileDisplayBig {
+        background: url('../../assets/images/sapori/Project4-MobileImageBIG.png');
         background-position: top;
         background-size: contain;
         background-repeat: no-repeat;

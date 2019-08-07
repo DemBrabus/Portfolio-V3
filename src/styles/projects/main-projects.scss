@@ -3,17 +3,17 @@
     height: 100%;
     position: relative;
     padding: 0 10%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: flex-start;
 }
 
     .ProjectPageWrap {
         width: 100%;
         max-width: 1900px;
-        display: flex;
-        justify-content: flex-start;
-        flex-direction: column;
+        // display: flex;
+        // justify-content: flex-start;
+        // flex-direction: column;
     }
 
 
@@ -496,6 +496,43 @@
             }
         }
 
+
+
+
+
+
+
+
+
+
+
+    /* ---- Project Section 5 - EMC BreakDown --------------- */
+        .WebAppWalkThrough {
+            width: 100%;
+            margin-bottom: 100px;
+        }
+
+            .WebAppWalkThroughImageWrap {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 40px;
+            }
+
+                .WebAppWalkThrough-Image1 {
+                    width: 30%;
+                    height: 50vw;
+                    max-height: 700px;
+                    margin: 20px;
+                }
+
+                .WebAppWalkThrough-Image2 {
+                    width: 30%;
+                    height: 50vw;
+                    max-height: 700px;
+                    margin: 20px;
+                }
 
 
 
