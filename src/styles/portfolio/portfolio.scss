@@ -141,7 +141,6 @@
             }
 
             .PortfolioContext-Text {
-                
                 font-size: 17px;
                 line-height: 28px;
                 color: rgb(167, 167, 167);
@@ -150,23 +149,23 @@
                     color: #E6E6E6;
                 }
 
-                @media screen and (max-width: 800px) {
-                    .PortfolioContext {
-                        flex-direction: column;
-                    }
-                    .PortfolioContext-Title {
-                        width: 100%;
-                        margin-bottom: 20px;
-                        font-size: 14px;
-                    }
-                    .PortfolioContext-Wrap {
-                        width: 100%;
-                    }
-                    .PortfolioContext-Text {
-                        font-size: 14px;
-                    }
-                    
-                }
+        @media screen and (max-width: 800px) {
+            .PortfolioContext {
+                flex-direction: column;
+            }
+            .PortfolioContext-Title {
+                width: 100%;
+                margin-bottom: 20px;
+                font-size: 14px;
+            }
+            .PortfolioContext-Wrap {
+                width: 100%;
+            }
+            .PortfolioContext-Text {
+                font-size: 14px;
+            }
+            
+        }
 
         /* -- Project Links ------------------------ */
             .PortfolioProjects {

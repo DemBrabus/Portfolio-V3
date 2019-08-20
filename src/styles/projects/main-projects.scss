@@ -3,17 +3,11 @@
     height: 100%;
     position: relative;
     padding: 0 10%;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: flex-start;
 }
 
     .ProjectPageWrap {
         width: 100%;
         max-width: 1900px;
-        // display: flex;
-        // justify-content: flex-start;
-        // flex-direction: column;
     }
 
 
@@ -548,8 +542,8 @@
     /* ---- Project Closing --------------- */
         .ProjectPage-Closing {
             width: 100%;
-            margin-top: 60px;
-            margin-bottom: 100px;
+            margin: 100px 0;
+            padding-left: 10%;
         }
 
             .ProjectPage-ClosingText {
@@ -586,12 +580,3 @@
 
 
 
-
-
-
-
-    /* ---- Footer --------------- */
-        .FooterProject {
-            position: relative;
-            padding-left: 0;
-        }

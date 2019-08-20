@@ -1,0 +1,242 @@
+.SpecializedHero {
+  background: url("/Project2-Hero.f1fbd2c1.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.Specialized-SideBySide {
+  background: url("/Specialized-SidebySide.80f67e71.jpg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.Specialized-Desktop1 {
+  background: url("/Specialized-DesktopLanding.bb54cc85.png");
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat; }
+
+.Specialized-Desktop2 {
+  background: url("/Specialized-Desktop2.00abce5d.jpg");
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat; }
+
+.Specialized-Responsive1 {
+  background: url("/Specialized-Responsive1.84660205.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.Specialized-Responsive3 {
+  background: url("/Specialized-Responsive3.cba5bd90.jpg");
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.Specialized-Responsive4 {
+  background: url("/Specialized-Responsive4Big.7b4acaf3.jpg");
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.ProjectIntro {
+  width: 100%;
+  height: 100vh;
+  position: relative; }
+
+.ProjectIntro-BG {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url("/SpecializedProjectBG.b3091faf.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: .7; }
+
+.ProjectIntro-Scroll {
+  position: absolute;
+  bottom: 250px;
+  left: 27px;
+  font-size: 10px;
+  letter-spacing: 2px;
+  transform: rotate(-90deg); }
+
+.ProjectIntro-Content {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+.ProjectIntro-ContentWrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding-left: 150px; }
+
+.ProjectIntro-Title {
+  font-size: 90px;
+  font-family: aktiv-grotesk-condensed, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  text-transform: uppercase; }
+
+.ProjectIntro-Info {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  margin-bottom: 40px; }
+
+.ProjectIntro-Descriptions {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.ProjectIntro-Type {
+  font-size: 12px;
+  text-transform: uppercase;
+  padding-left: 5px;
+  margin-bottom: 10px;
+  white-space: nowrap; }
+
+.ProjectIntro-Date {
+  font-size: 12px;
+  text-transform: uppercase;
+  padding-left: 5px;
+  white-space: nowrap; }
+
+.ProjectIntro-Links {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 40px; }
+
+.ProjectIntro-LinkWrap {
+  width: 100%;
+  margin-bottom: 10px;
+  margin-right: 25%;
+  text-align: right; }
+
+.GitHubLink {
+  margin-bottom: 0; }
+
+.ProjectIntro-Link {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-right: 20px;
+  white-space: nowrap; }
+
+.ProjectIntro-Link:hover {
+  color: #c0dde1; }
+
+.WebsiteLink {
+  padding-right: 33px; }
+
+@media screen and (max-width: 900px) {
+  .ProjectIntro-BG {
+    background-position: right; } }
+
+@media screen and (max-width: 700px) {
+  .ProjectIntro-ContentWrap {
+    padding-left: 70px; }
+  .ProjectIntro-Title {
+    font-size: 10vw;
+    margin-bottom: 20px; }
+  .ProjectIntro-Info {
+    display: block; }
+  .ProjectIntro-Descriptions {
+    width: 100%;
+    margin-bottom: 10px; }
+  .ProjectIntro-Links {
+    width: 100%;
+    padding-left: 5px; }
+  .ProjectIntro-LinkWrap {
+    text-align: left; } }
+
+@media screen and (max-width: 500px) {
+  .ProjectIntro-Title {
+    font-size: 50px; } }
+
+.ProjectSPWA {
+  width: 100%;
+  padding: 100px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF;
+  color: #141414; }
+
+.ProjectSPWA-Content {
+  max-width: 700px; }
+
+.ProjectSPWA-Header {
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin-bottom: 40px; }
+
+.ProjectSPWA-Text {
+  padding-left: 300px;
+  line-height: 24px;
+  margin-bottom: 20px; }
+
+.ProjectDisplay-Mock {
+  width: 100%;
+  height: 160vh; }
+
+.Mock1-BG {
+  width: 100%;
+  height: 100%;
+  background: url("/Moch1.551fd38f.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.Mock2-BG {
+  width: 100%;
+  height: 100%;
+  background: url("/IphoneMockUp-Specialized.1daaaccc.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.ProjectTech {
+  width: 100%;
+  padding: 100px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF;
+  color: #141414; }
+
+.ProjectTech-Content {
+  max-width: 700px; }
+
+.ProjectTech-Header {
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin-bottom: 40px; }
+
+.ProjectTech-Text {
+  padding-left: 300px;
+  line-height: 24px;
+  margin-bottom: 20px; }
+
+.ProjectTech-Languages {
+  padding-left: 300px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 32px;
+  text-transform: uppercase; }
+  .ProjectTech-Languages span {
+    margin-right: 10px; }
+
+
+/*# sourceMappingURL=/specialized.567c59d1.css.map */

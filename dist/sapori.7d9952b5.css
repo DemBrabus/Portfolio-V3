@@ -1,0 +1,50 @@
+.SaporiHero {
+  background: url("/Project4-Hero.b1beae23.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.Sapori-SideBySide {
+  background: url("/Project4-Image1.780dd370.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.Sapori-Desktop1 {
+  background: url("/Project4-DesktopView1.d93ed1d7.png");
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat; }
+
+.Sapori-Desktop2 {
+  background: url("/Specialized-Desktop2.00abce5d.jpg");
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat; }
+
+.Sapori-Responsive1 {
+  background: url("/Project4-DesktopView1.d93ed1d7.png");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.Sapori-Responsive3 {
+  background: url("/Project4-Responsive3.bc59e3b7.png");
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.Sapori-Responsive4 {
+  background: url("/Project4-Responsive4.303ee2fc.png");
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.EMC-MobileDisplayBig {
+  background: url("/Project4-MobileImageBIG.708f3fa7.png");
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+
+/*# sourceMappingURL=/sapori.7d9952b5.css.map */
