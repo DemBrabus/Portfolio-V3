@@ -11,8 +11,27 @@
     <link rel="stylesheet" href="https://use.typekit.net/kbx2rsg.css">
     <title>Starck - Project 2 | Daniel Montoya</title>
 </head>
-<body>
-    <div class="GroundZero">
+<body id="Body">
+
+
+    <!-- Projects Intro -->
+    <div class="Projects-Intro-Wrap" id="Projects-Intro-Wrap">
+        <div class="Projects-Intro-Inner">
+            <div class="Project-Intro-Slide Project-Intro-Slide1" id="Project-Intro-Slide1">
+            </div>
+            <div class="Project-Intro-Slide Project-Intro-Slide2" id="Project-Intro-Slide2">
+                <img src="./assets/icons/PortfolioLogo.svg" class="Projects-Intro-Logo" alt="LighteningBoltsLogo">
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- ScrollBar -->
+    <div class="ScrollBar" id="ScrollBar"></div>
+
+
+    
+    <div class="GroundZero" id="GroundZero">
 
         <nav class="Nav ProjectNav" id="Nav">
             <a href="/index.html" class="Logo" id="Logo"><img src="./assets/icons/PortfolioLogo.svg" alt="Bolts Logo"></a>
@@ -146,19 +165,22 @@
                     </div>
 
 
-                    <!-- ---  Footer --------------  -->
-                    <div class="Footer FooterProject" id="Footer">
-                        <p class="FooterText" id="FooterText1">I Hope You Enjoyed My <span class="Bold">Awesome Portfolio</span></p>
-                        <div class="FooterText2Wrap">
-                            <p class="FooterText" id="FooterText2">Made With </p>
-                            <div class="HeartIcon"></div>
-                            <p class="FooterText" > From Scratch</p>
-                        </div>
-                    </div>
+                   </div>
 
-                    
+            <!-- ---  Footer --------------  -->
+            <div class="Footer FooterProject" id="Footer">
+                <p class="FooterText" id="FooterText1">I Hope You Enjoyed My <span class="Bold">Awesome Portfolio</span></p>
+                <div class="FooterText2Wrap">
+                    <p class="FooterText" id="FooterText2">Made With </p>
+                    <div class="HeartIcon"></div>
+                    <p class="FooterText" > From Scratch</p>
+                </div>
             </div>
+
         </div>
     </div>
+
+        <script src="./scripts/ProjectPages/IntroScene.js"></script>
+    <script src="./index.js"></script>
 </body>
 </html>
