@@ -11,8 +11,7 @@ html, body {
   background-color: #141414;
   position: relative;
   display: flex;
-  justify-content: center;
-  overflow: hidden; }
+  justify-content: center; }
 
 .BgLight {
   background-color: #f0f0f0; }
@@ -36,7 +35,7 @@ a {
   height: 100%;
   position: relative;
   background-color: transparent;
-  opacity: 0; }
+  overflow-x: hidden; }
 
 .ScrollBar {
   position: fixed;
@@ -129,10 +128,12 @@ a {
   opacity: 0;
   z-index: 550;
   display: none;
+  justify-content: center;
   transition: all; }
 
 .Nav-Wrap {
   width: 100%;
+  max-width: 1920px;
   height: 100%;
   padding: 0 10%;
   position: relative; }
@@ -257,6 +258,16 @@ a {
   color: #828282;
   font-weight: 300; }
 
+.Nav-Projects-Close {
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  font-size: 12px;
+  display: none;
+  opacity: 0;
+  transition: all;
+  cursor: pointer; }
+
 .Nav-Projects-List {
   position: absolute;
   top: 150px;
@@ -275,12 +286,14 @@ a {
   font-weight: 900;
   font-style: normal;
   text-transform: uppercase;
+  white-space: nowrap;
   transition: all; }
 
 .Nav-Projects-Link-Description {
   font-size: 12px;
   text-transform: uppercase;
   font-weight: 300;
+  white-space: nowrap;
   margin-top: -10px;
   padding-left: 2px; }
 
@@ -321,11 +334,14 @@ a {
   .Nav-Link {
     font-size: 30px; } }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
   .Nav-Info {
     display: none; }
   .Nav-Divide-Line {
-    display: none; } }
+    display: none; }
+  .Nav-Projects-Close {
+    left: 10%;
+    top: 100px; } }
 
 @media screen and (max-width: 650px) {
   .Nav-Exit {
@@ -335,7 +351,11 @@ a {
     width: 40px;
     height: 10px; }
   .Nav-Link {
-    font-size: 50px; } }
+    font-size: 50px; }
+  .Nav-Projects-Link {
+    font-size: 50px; }
+  .Nav-Projects-Link-Description {
+    font-size: 9px; } }
 
 /*
 -

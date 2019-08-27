@@ -16341,6 +16341,7 @@ var _all = require("gsap/all");
   var NavLink4 = document.getElementById('Nav-Link4');
   var NavInfo = document.getElementById('Nav-Info');
   var NavProjectsList = document.getElementById('Nav-Projects-List');
+  var NavProjectClose = document.getElementById('Nav-Projects-Close');
   var NavProjectsLink1 = document.getElementById('Nav-Projects-Link1');
   var NavProjectsLink2 = document.getElementById('Nav-Projects-Link2');
   var NavProjectsLink3 = document.getElementById('Nav-Projects-Link3');
@@ -16359,7 +16360,7 @@ var _all = require("gsap/all");
     top: '50%',
     ease: Expo.easeIn
   }, 'wave1').to(Nav, .01, {
-    display: 'block'
+    display: 'flex'
   }, 'wave1').to(NavExit, .5, {
     opacity: 1,
     ease: _all.Power0.easeIn,
@@ -16406,42 +16407,47 @@ var _all = require("gsap/all");
   }).to(NavProjectsList, .01, {
     display: 'block',
     delay: .4
-  }).fromTo(NavProjectsLink1, .5, {
+  }).to(NavProjectClose, .01, {
+    display: 'block'
+  }).to(NavProjectClose, .5, {
+    opacity: 1,
+    ease: _all.Power0.easeIn
+  }).fromTo(NavProjectsLink1, .52, {
     y: 20,
     ease: _all.Power0.easeIn
   }, {
     y: 0,
     opacity: 1,
     ease: _all.Power0.easeIn
-  }).fromTo(NavProjectsLink2, .5, {
+  }, '-=.5').fromTo(NavProjectsLink2, .52, {
     y: 20,
     ease: _all.Power0.easeIn
   }, {
     y: 0,
     opacity: 1,
     ease: _all.Power0.easeIn
-  }, '-=.45').fromTo(NavProjectsLink3, .5, {
+  }, '-=.4').fromTo(NavProjectsLink3, .52, {
     y: 20,
     ease: _all.Power0.easeIn
   }, {
     y: 0,
     opacity: 1,
     ease: _all.Power0.easeIn
-  }, '-=.45').fromTo(NavProjectsLink4, .5, {
+  }, '-=.4').fromTo(NavProjectsLink4, .52, {
     y: 20,
     ease: _all.Power0.easeIn
   }, {
     y: 0,
     opacity: 1,
     ease: _all.Power0.easeIn
-  }, '-=.45').fromTo(NavProjectsLink5, .5, {
+  }, '-=.4').fromTo(NavProjectsLink5, .52, {
     y: 20,
     ease: _all.Power0.easeIn
   }, {
     y: 0,
     opacity: 1,
     ease: _all.Power0.easeIn
-  }, '-=.45');
+  }, '-=.4');
   ProjectsAnimation.pause(); //Function
 
   var AnimateProjectIn = function AnimateProjectIn(e) {
@@ -16454,6 +16460,7 @@ var _all = require("gsap/all");
 
 
   NavLink3.addEventListener('click', AnimateProjectIn);
+  NavProjectClose.addEventListener('click', AnimateProjectOut); //Function
 })();
 },{"gsap/all":"../node_modules/gsap/all.js"}],"index.js":[function(require,module,exports) {
 "use strict";
@@ -16491,7 +16498,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64639" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51083" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

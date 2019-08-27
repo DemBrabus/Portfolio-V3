@@ -7,7 +7,6 @@ import { TweenMax, TimelineMax, Power1, CustomEase, Power2, Expo } from 'gsap/al
 
     const Body = document.getElementById('Body');
     const GroundZero = document.getElementById('GroundZero');
-    const ScrollBar = document.getElementById('ScrollBar');
     
     const Nav = document.getElementById('Nav');
     const IntroSlide1 = document.getElementById('Project-Intro-Slide1');
@@ -27,7 +26,6 @@ import { TweenMax, TimelineMax, Power1, CustomEase, Power2, Expo } from 'gsap/al
                 .to(GroundZero, .01, {opacity: 1}, 'wave2')
                 .set(Body, {className: '+=OverFlow'}, 'wave2')
                 .set(Nav, {opacity: 1}, 'wave2')
-                .set(ScrollBar, {opacity: 1}, 'wave2')
 
             .add('wave3')
                 .to(IntroSlide2, 1, {top: '100%', ease:Expo.easeInOut, delay: .3}, 'wave3')
