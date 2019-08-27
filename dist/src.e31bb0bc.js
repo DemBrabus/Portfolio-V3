@@ -16340,10 +16340,16 @@ var _all = require("gsap/all");
   var NavLink3 = document.getElementById('Nav-Link3');
   var NavLink4 = document.getElementById('Nav-Link4');
   var NavInfo = document.getElementById('Nav-Info');
+  var NavProjectsList = document.getElementById('Nav-Projects-List');
+  var NavProjectsLink1 = document.getElementById('Nav-Projects-Link1');
+  var NavProjectsLink2 = document.getElementById('Nav-Projects-Link2');
+  var NavProjectsLink3 = document.getElementById('Nav-Projects-Link3');
+  var NavProjectsLink4 = document.getElementById('Nav-Projects-Link4');
+  var NavProjectsLink5 = document.getElementById('Nav-Projects-Link5');
   var MenuIcon = document.getElementById('Menu-Icon-Wrap');
   var MenuIconBar1 = document.getElementById('Menu-Icon-Bar1');
   var MenuIconBar2 = document.getElementById('Menu-Icon-Bar2'); //Variables -------- ------ ---- -- -
-  //Timeline -- -- -- -- 
+  //Animate Nav Timeline -- -- -- -- 
 
   var NavAnimation = new _all.TimelineMax();
   NavAnimation.add('wave1').to(MenuIconBar1, .4, {
@@ -16388,7 +16394,66 @@ var _all = require("gsap/all");
 
   MenuIcon.addEventListener('click', AnimateNavIn); //Out
 
-  NavExit.addEventListener('click', AnimateNavOut);
+  NavExit.addEventListener('click', AnimateNavOut); //Animate Projects Menu Timeline -- -- -- -- 
+
+  var ProjectsAnimation = new _all.TimelineMax();
+  ProjectsAnimation.to(NavList, .6, {
+    opacity: 0,
+    ease: _all.Power0.easeIn,
+    delay: .3
+  }).to(NavList, .01, {
+    display: 'none'
+  }).to(NavProjectsList, .01, {
+    display: 'block',
+    delay: .4
+  }).fromTo(NavProjectsLink1, .5, {
+    y: 20,
+    ease: _all.Power0.easeIn
+  }, {
+    y: 0,
+    opacity: 1,
+    ease: _all.Power0.easeIn
+  }).fromTo(NavProjectsLink2, .5, {
+    y: 20,
+    ease: _all.Power0.easeIn
+  }, {
+    y: 0,
+    opacity: 1,
+    ease: _all.Power0.easeIn
+  }, '-=.45').fromTo(NavProjectsLink3, .5, {
+    y: 20,
+    ease: _all.Power0.easeIn
+  }, {
+    y: 0,
+    opacity: 1,
+    ease: _all.Power0.easeIn
+  }, '-=.45').fromTo(NavProjectsLink4, .5, {
+    y: 20,
+    ease: _all.Power0.easeIn
+  }, {
+    y: 0,
+    opacity: 1,
+    ease: _all.Power0.easeIn
+  }, '-=.45').fromTo(NavProjectsLink5, .5, {
+    y: 20,
+    ease: _all.Power0.easeIn
+  }, {
+    y: 0,
+    opacity: 1,
+    ease: _all.Power0.easeIn
+  }, '-=.45');
+  ProjectsAnimation.pause(); //Function
+
+  var AnimateProjectIn = function AnimateProjectIn(e) {
+    ProjectsAnimation.play();
+  };
+
+  var AnimateProjectOut = function AnimateProjectOut(e) {
+    ProjectsAnimation.reverse();
+  }; //Listeners
+
+
+  NavLink3.addEventListener('click', AnimateProjectIn);
 })();
 },{"gsap/all":"../node_modules/gsap/all.js"}],"index.js":[function(require,module,exports) {
 "use strict";
@@ -16426,7 +16491,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63052" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64639" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

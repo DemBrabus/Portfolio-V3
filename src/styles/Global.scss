@@ -210,98 +210,138 @@ a {
             transition: all;
         }
 
-            .Nav-List {
-                padding-top: 150px;
-                opacity: 0;
-                transition: all;
+        .Nav-List {
+            padding-top: 150px;
+            opacity: 0;
+            transition: all;
+        }
+
+            .Nav-List-Item {
+                margin-bottom: 30px;
             }
 
-                .Nav-List-Item {
+                .Nav-Link {
+                    font-size: 90px;
+                    font-family: aktiv-grotesk-condensed, sans-serif;
+                    font-weight: 900;
+                    font-style: normal;
+                    text-transform: uppercase;
+                    transition: all;
+                }
+                    #Nav-Link3 {
+                        cursor: pointer;
+                    }
+
+                    .Nav-Link-Number {
+                        font-size: 10px;
+                        font-weight: 300;
+                        margin-left: -10px;
+                        margin-bottom: -10px;
+                        color: rgb(167, 167, 167);
+                        }
+
+        .Nav-Info {
+            position: absolute;
+            bottom: 0;
+            transform: translateY(-24%);
+            right: 0;
+            padding-right: 120px;
+            opacity: 0;
+            transition: all;
+        }
+
+            .Nav-Info-Wrap {
+                width: 100%;
+                height: 100%;
+                position: relative;
+                
+            }
+
+                .Nav-Info-Name {
+                    font-size: 26px;
+                    white-space: nowrap;
+                    font-weight: 700;
+                    margin-bottom: 5px;
+                    color: #b8b8b8;
+                }
+
+                .Nav-Info-Title {
+                    font-size: 16px;
+                    white-space: nowrap;
+                    margin-bottom: 5px;
+                    color: #828282;
+                    font-weight: 300;
+                }
+                .Nav-Info-Portfolio{
+                    font-size: 16px;
+                    white-space: nowrap;
+                    margin-bottom: 50px;
+                    color: #828282;
+                    font-weight: 300;
+                }
+
+                .Nav-Info-Links {
+                    margin-bottom: 10px;
+                }
+
+                .Nav-Info-Link {
+                    font-size: 14px;
+                    white-space: nowrap;
+                    font-weight: 300;
+                    color: #828282;
+                    margin-right: 5px;
+                }
+                    .Nav-Info-Link:hover {
+                        color: rgb(240, 240, 240);
+                    }
+
+                .Nav-Info-Email {
+                    font-size: 14px;
+                    white-space: nowrap;
                     margin-bottom: 30px;
+                    color: #828282;
+                    font-weight: 300;
                 }
 
-                    .Nav-Link {
-                        font-size: 90px;
-                        font-family: aktiv-grotesk-condensed, sans-serif;
-                        font-weight: 900;
-                        font-style: normal;
-                        text-transform: uppercase;
-                        transition: all;
-                    }
-                        #Nav-Link3 {
-                            cursor: pointer;
-                        }
+        .Nav-Projects-List {
+            position: absolute;
+            top: 150px;
+            opacity: 1;
+            display: none;
+            transition: all;
+        }       
 
-                        .Nav-Link-Number {
-                            font-size: 10px;
-                            font-weight: 300;
-                            margin-left: -10px;
-                            margin-bottom: -10px;
-                            color: rgb(167, 167, 167);
-                        }
-            .Nav-Info {
-                position: absolute;
-                bottom: 0;
-                transform: translateY(-24%);
-                right: 0;
-                padding-right: 120px;
+            .Nav-Projects-List-Item {
+                margin-bottom: 25px;
                 opacity: 0;
                 transition: all;
             }
 
-                .Nav-Info-Wrap {
-                    width: 100%;
-                    height: 100%;
-                    position: relative;
-                    
+                .Nav-Projects-Link {
+                    font-size: 90px;
+                    font-family: aktiv-grotesk-condensed, sans-serif;
+                    font-weight: 900;
+                    font-style: normal;
+                    text-transform: uppercase;
+                    transition: all;
                 }
 
-                    .Nav-Info-Name {
-                        font-size: 26px;
-                        white-space: nowrap;
-                        font-weight: 700;
-                        margin-bottom: 5px;
-                        color: #b8b8b8;
+                    .Nav-Projects-Link-Description {
+                        font-size: 12px;
+                        text-transform: uppercase;
+                        font-weight: 300;
+                        margin-top: -10px;
+                        padding-left: 2px;
                     }
 
-                    .Nav-Info-Title {
-                        font-size: 16px;
-                        white-space: nowrap;
-                        margin-bottom: 5px;
-                        color: #828282;
-                        font-weight: 300;
-                    }
-                    .Nav-Info-Portfolio{
-                        font-size: 16px;
-                        white-space: nowrap;
-                        margin-bottom: 50px;
-                        color: #828282;
-                        font-weight: 300;
-                    }
 
-                    .Nav-Info-Links {
-                        margin-bottom: 10px;
-                    }
 
-                    .Nav-Info-Link {
-                        font-size: 14px;
-                        white-space: nowrap;
-                        font-weight: 300;
-                        color: #828282;
-                        margin-right: 5px;
-                    }
-                        .Nav-Info-Link:hover {
-                            color: rgb(240, 240, 240);
-                        }
 
-                    .Nav-Info-Email {
-                        font-size: 14px;
-                        white-space: nowrap;
-                        margin-bottom: 30px;
-                        color: #828282;
-                        font-weight: 300;
-                    }
-        
+@media screen and (max-height: 900px){
+    .Nav-Projects-Link {
+        font-size: 70px;
+    }
+}  
 
 @media screen and (max-height: 750px){
     .Nav-List {
@@ -309,6 +349,16 @@ a {
     }
     .Nav-Link {
         font-size: 50px;
+    }
+    .Nav-Projects-List {
+        top: 80px;
+    }
+    .Nav-Projects-Link {
+        font-size: 50px;
+    }
+    .Nav-Projects-Link-Description {
+        font-size: 10px;
+        margin-top: -5px;
     }
     .Nav-Info-Name {
         font-size: 18px;
@@ -329,6 +379,11 @@ a {
     }
 }
 
+@media screen and (max-height: 550px){
+    .Nav-Projects-Link {
+        font-size: 30px;
+    }
+}
 @media screen and (max-height: 500px){
     .Nav-List {
         padding-top: 80px;
@@ -336,6 +391,8 @@ a {
     .Nav-Link {
         font-size: 30px;
     }
+    
+    
 }
 
 @media screen and (max-width: 1000px){

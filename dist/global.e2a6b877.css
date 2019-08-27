@@ -257,11 +257,49 @@ a {
   color: #828282;
   font-weight: 300; }
 
+.Nav-Projects-List {
+  position: absolute;
+  top: 150px;
+  opacity: 1;
+  display: none;
+  transition: all; }
+
+.Nav-Projects-List-Item {
+  margin-bottom: 25px;
+  opacity: 0;
+  transition: all; }
+
+.Nav-Projects-Link {
+  font-size: 90px;
+  font-family: aktiv-grotesk-condensed, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  text-transform: uppercase;
+  transition: all; }
+
+.Nav-Projects-Link-Description {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-top: -10px;
+  padding-left: 2px; }
+
+@media screen and (max-height: 900px) {
+  .Nav-Projects-Link {
+    font-size: 70px; } }
+
 @media screen and (max-height: 750px) {
   .Nav-List {
     padding-top: 100px; }
   .Nav-Link {
     font-size: 50px; }
+  .Nav-Projects-List {
+    top: 80px; }
+  .Nav-Projects-Link {
+    font-size: 50px; }
+  .Nav-Projects-Link-Description {
+    font-size: 10px;
+    margin-top: -5px; }
   .Nav-Info-Name {
     font-size: 18px; }
   .Nav-Info-Title {
@@ -272,6 +310,10 @@ a {
     font-size: 12px; }
   .Nav-Info-Email {
     font-size: 12px; } }
+
+@media screen and (max-height: 550px) {
+  .Nav-Projects-Link {
+    font-size: 30px; } }
 
 @media screen and (max-height: 500px) {
   .Nav-List {

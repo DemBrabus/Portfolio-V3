@@ -13,7 +13,7 @@
     .Intro-Window-Wrap {
         width: 100%;
         height: 100%;
-        padding: 0 10%;
+        padding: 0 5%;
         position: relative;
     }
 
@@ -99,3 +99,10 @@
             .IntroSlideRight {
                 right: 0;
             }
+
+    
+@media screen and (max-width: 400px){
+    .Intro-Description {
+        width: 300px;
+    }
+}
