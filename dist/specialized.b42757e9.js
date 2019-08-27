@@ -184,12 +184,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"styles/projects/starck.scss":[function(require,module,exports) {
+},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"styles/Projects/specialized.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../../assets/images/starck/Project1Hero-Portfolio.jpg":[["Project1Hero-Portfolio.1e27f129.jpg","assets/images/starck/Project1Hero-Portfolio.jpg"],"assets/images/starck/Project1Hero-Portfolio.jpg"],"./../../assets/images/starck/Project1Section1Image.png":[["Project1Section1Image.234570de.png","assets/images/starck/Project1Section1Image.png"],"assets/images/starck/Project1Section1Image.png"],"./../../assets/images/starck/Project1DesktopWindow.png":[["Project1DesktopWindow.18e6119b.png","assets/images/starck/Project1DesktopWindow.png"],"assets/images/starck/Project1DesktopWindow.png"],"./../../assets/images/starck/Project1-DesktopDisplay2Image.png":[["Project1-DesktopDisplay2Image.c5200cce.png","assets/images/starck/Project1-DesktopDisplay2Image.png"],"assets/images/starck/Project1-DesktopDisplay2Image.png"],"./../../assets/images/starck/Project1DisplayImage1Big.png":[["Project1DisplayImage1Big.385be06a.png","assets/images/starck/Project1DisplayImage1Big.png"],"assets/images/starck/Project1DisplayImage1Big.png"],"./../../assets/images/starck/Project1MobileDisplay3Small.png":[["Project1MobileDisplay3Small.587f98d4.png","assets/images/starck/Project1MobileDisplay3Small.png"],"assets/images/starck/Project1MobileDisplay3Small.png"],"./../../assets/images/starck/Project1-MobileDisplayBig.png":[["Project1-MobileDisplayBig.0ce84284.png","assets/images/starck/Project1-MobileDisplayBig.png"],"assets/images/starck/Project1-MobileDisplayBig.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./../../assets/images/specialized/SpecializedProjectBG.jpg":[["SpecializedProjectBG.b3091faf.jpg","assets/images/specialized/SpecializedProjectBG.jpg"],"assets/images/specialized/SpecializedProjectBG.jpg"],"./../../assets/images/specialized/Moch1.jpg":[["Moch1.551fd38f.jpg","assets/images/specialized/Moch1.jpg"],"assets/images/specialized/Moch1.jpg"],"./../../assets/images/specialized/IphoneMockUp-Specialized.jpg":[["IphoneMockUp-Specialized.1daaaccc.jpg","assets/images/specialized/IphoneMockUp-Specialized.jpg"],"assets/images/specialized/IphoneMockUp-Specialized.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -393,4 +393,4 @@ function hmrAcceptRun(bundle, id) {
   }
 }
 },{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
-//# sourceMappingURL=/starck.f7dc25ee.js.map
+//# sourceMappingURL=/specialized.b42757e9.js.map

@@ -1,0 +1,24 @@
+.Specialized-Intro-BG {
+  background: url("/SpecializedProjectBG.b3091faf.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+@media screen and (max-width: 900px) {
+  .Specialized-Intro-BG {
+    background-position: right; } }
+
+.Specialized-Mock1-BG {
+  background: url("/Moch1.551fd38f.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.Specialized-Mock2-BG {
+  background: url("/IphoneMockUp-Specialized.1daaaccc.jpg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+
+/*# sourceMappingURL=/specialized.b42757e9.css.map */
