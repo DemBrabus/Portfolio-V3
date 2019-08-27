@@ -14,9 +14,6 @@ html, body {
   justify-content: center;
   overflow: hidden; }
 
-.OverFlow {
-  overflow-y: scroll; }
-
 .BgLight {
   background-color: #f0f0f0; }
 
@@ -67,76 +64,236 @@ a {
 -
 */
 /* --- Navigation ------------ */
-.Nav {
-  width: 300px;
+.Menu-Icon {
+  width: 50px;
   height: 120px;
   position: fixed;
   top: 0;
-  right: 0;
-  padding-right: 60px;
+  right: 60px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  opacity: 0;
-  z-index: 10000;
-  transition: all .5s ease-in-out; }
+  z-index: 500;
+  transition: all .6s ease-in-out; }
 
-.ProjectNav {
+.Menu-Icon-Wrap {
+  width: 50px;
+  height: 12px;
+  position: relative;
+  cursor: pointer; }
+
+.Menu-Icon-Bar {
   width: 100%;
-  height: 120px;
-  position: fixed;
-  top: 0;
-  right: 0;
-  padding: 0 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 10000;
-  transition: all .5s ease-in-out; }
+  height: 2px;
+  background-color: #f0f0f0;
+  position: absolute;
+  transition: all; }
+
+.Menu-Icon-Bar1 {
+  top: 0; }
+
+.Menu-Icon-Bar2 {
+  top: 100%; }
 
 .Portfolio-Logo {
   height: 120px;
   position: fixed;
   top: 0;
+  left: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 500;
+  transition: all .6s; }
+
+@media screen and (max-width: 650px) {
+  .Portfolio-Logo {
+    left: 30px;
+    height: 100px; }
+  .Menu-Icon {
+    right: 35px;
+    height: 100px; }
+  .Menu-Icon-Wrap {
+    width: 40px;
+    height: 10px; } }
+
+.Nav {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  position: fixed;
+  top: 0;
   left: 0;
-  padding-left: 40px;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  z-index: 550;
+  display: none;
+  transition: all; }
+
+.Nav-Wrap {
+  width: 100%;
+  height: 100%;
+  padding: 0 10%;
+  position: relative; }
+
+.Nav-Exit {
+  width: 50px;
+  height: 120px;
+  position: fixed;
+  top: 0;
+  right: 60px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  z-index: 500;
   opacity: 0;
-  z-index: 10000;
-  transition: all .6s; }
+  transition: all .6s ease-in-out; }
 
-.NavList {
+.Nav-Exit-Wrap {
+  width: 50px;
+  height: 12px;
   display: flex;
-  justify-content: space-between;
-  width: 180px;
-  transition: width .5s ease-in-out; }
+  align-items: center;
+  position: relative;
+  cursor: pointer; }
 
-.NavLink {
-  color: #E6E6E6;
-  font-size: 15px;
-  font-weight: 400;
+.Nav-Exit-Bar {
+  width: 100%;
+  height: 2px;
+  background-color: #f0f0f0;
+  position: absolute;
+  transition: all; }
+
+.Nav-Divide-Line {
+  position: absolute;
+  left: 60%;
+  transform: translateX(-40%);
+  top: -100%;
+  height: 100vh;
+  width: 1px;
+  opacity: 0;
+  background-color: #565656;
+  transition: all; }
+
+.Nav-List {
+  padding-top: 150px;
+  opacity: 0;
+  transition: all; }
+
+.Nav-List-Item {
+  margin-bottom: 30px; }
+
+.Nav-Link {
+  font-size: 90px;
+  font-family: aktiv-grotesk-condensed, sans-serif;
+  font-weight: 900;
+  font-style: normal;
   text-transform: uppercase;
-  transition: font-size  .5s ease-in-out; }
+  transition: all; }
 
-.NavLink:hover {
-  color: #c0dde1; }
+#Nav-Link3 {
+  cursor: pointer; }
 
-#NavLinkPortfolio {
-  font-weight: 900; }
+.Nav-Link-Number {
+  font-size: 10px;
+  font-weight: 300;
+  margin-left: -10px;
+  margin-bottom: -10px;
+  color: #a7a7a7; }
 
-#NavLinkAbout {
-  font-weight: 900; }
+.Nav-Info {
+  position: absolute;
+  bottom: 0;
+  transform: translateY(-24%);
+  right: 0;
+  padding-right: 120px;
+  opacity: 0;
+  transition: all; }
+
+.Nav-Info-Wrap {
+  width: 100%;
+  height: 100%;
+  position: relative; }
+
+.Nav-Info-Name {
+  font-size: 26px;
+  white-space: nowrap;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #b8b8b8; }
+
+.Nav-Info-Title {
+  font-size: 16px;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  color: #828282;
+  font-weight: 300; }
+
+.Nav-Info-Portfolio {
+  font-size: 16px;
+  white-space: nowrap;
+  margin-bottom: 50px;
+  color: #828282;
+  font-weight: 300; }
+
+.Nav-Info-Links {
+  margin-bottom: 10px; }
+
+.Nav-Info-Link {
+  font-size: 14px;
+  white-space: nowrap;
+  font-weight: 300;
+  color: #828282;
+  margin-right: 5px; }
+
+.Nav-Info-Link:hover {
+  color: #f0f0f0; }
+
+.Nav-Info-Email {
+  font-size: 14px;
+  white-space: nowrap;
+  margin-bottom: 30px;
+  color: #828282;
+  font-weight: 300; }
+
+@media screen and (max-height: 750px) {
+  .Nav-List {
+    padding-top: 100px; }
+  .Nav-Link {
+    font-size: 50px; }
+  .Nav-Info-Name {
+    font-size: 18px; }
+  .Nav-Info-Title {
+    font-size: 14px; }
+  .Nav-Info-Portfolio {
+    font-size: 14px; }
+  .Nav-Info-Links {
+    font-size: 12px; }
+  .Nav-Info-Email {
+    font-size: 12px; } }
+
+@media screen and (max-height: 500px) {
+  .Nav-List {
+    padding-top: 80px; }
+  .Nav-Link {
+    font-size: 30px; } }
+
+@media screen and (max-width: 1000px) {
+  .Nav-Info {
+    display: none; }
+  .Nav-Divide-Line {
+    display: none; } }
 
 @media screen and (max-width: 650px) {
-  .Nav {
-    padding-right: 35px; }
-  .ProjectNav {
-    width: 100%;
-    padding: 0 35px; }
-  .NavLink {
-    font-size: 16px; } }
+  .Nav-Exit {
+    right: 35px;
+    height: 100px; }
+  .Nav-Exit-Wrap {
+    width: 40px;
+    height: 10px; }
+  .Nav-Link {
+    font-size: 50px; } }
 
 /*
 -
@@ -158,7 +315,6 @@ a {
   position: absolute;
   bottom: 0;
   left: 0;
-  padding-left: 10%;
   display: flex;
   justify-content: flex-start;
   align-items: center; }

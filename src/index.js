@@ -1,4 +1,3 @@
-import Windows from './scripts/Portfolio/Windows';
-import LandingIntroScene from './scripts/Portfolio/IntroScene';
+import Nav from './scripts/Global/Nav';
 
 console.log('Portfolio - Final');

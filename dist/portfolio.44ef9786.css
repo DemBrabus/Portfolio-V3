@@ -59,6 +59,11 @@
   opacity: 0;
   transition: all; }
 
+.ButtonActive {
+  color: #f0f0f0;
+  background-color: #141414;
+  border: 1px solid #f0f0f0; }
+
 .Landing-Intro-Divide-Line {
   position: absolute;
   bottom: -100%;
@@ -234,7 +239,7 @@
 
 /* -- Project Links ------------------------ */
 .PortfolioProjects {
-  margin-top: 110px;
+  margin-top: 200px;
   transition: margin-top .5s ease-in-out; }
 
 .PortfolioProjectsTitle {

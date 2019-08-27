@@ -26,31 +26,31 @@ import { TweenMax, TimelineMax, Power1, CustomEase, Power2 } from 'gsap/all';
 
             const Cloud1Tl = new TimelineMax();
                 Cloud1Tl
-                    .to(Cloud1, .3, {opacity: .85, ease: Power1.easeOut})
+                    .to(Cloud1, .3, {opacity: .85, ease: Power0.ease})
                 ;
                 Cloud1Tl.pause();
 
                 const Cloud2Tl = new TimelineMax();
                     Cloud2Tl
-                        .to(Cloud2, .3, {opacity: .85, ease: Power1.easeOut})
+                        .to(Cloud2, .3, {opacity: .85, ease: Power0.ease})
                     ;
                     Cloud2Tl.pause();
 
                     const Cloud3Tl = new TimelineMax();
                         Cloud3Tl
-                            .to(Cloud3, .3, {opacity: .85, ease: Power1.easeOut})
+                            .to(Cloud3, .3, {opacity: .85, ease: Power0.ease})
                         ;
                         Cloud3Tl.pause();
 
                 const Cloud4Tl = new TimelineMax();
                     Cloud4Tl
-                        .to(Cloud4, .3, {opacity: .85, ease: Power1.easeOut})
+                        .to(Cloud4, .3, {opacity: .85, ease: Power0.ease})
                     ;
                     Cloud4Tl.pause();
 
             const Cloud5Tl = new TimelineMax();
                 Cloud5Tl
-                    .to(Cloud5, .3, {opacity: .85, ease: Power1.easeOut})
+                    .to(Cloud5, .3, {opacity: .85, ease: Power0.ease})
                 ;
                 Cloud5Tl.pause();
 

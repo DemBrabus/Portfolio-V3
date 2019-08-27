@@ -1,0 +1,101 @@
+//Intro ------- ------ ----- --- -- -
+.Intro-Window {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #141414;
+}
+
+    .Intro-Window-Wrap {
+        width: 100%;
+        height: 100%;
+        padding: 0 10%;
+        position: relative;
+    }
+
+        .Intro-Divide-Line {
+            position: absolute;
+            left: 50%;
+            bottom: -100%;
+            transform: translateX(-50%);
+            height: 100%;
+            width: 1px;
+            background-color: #141414;
+            z-index: 10;
+        }
+
+        .Intro-Text {
+            font-size: 12px;
+            font-weight: 700;
+            color: #141414;
+            margin-bottom: 10px;
+            position: absolute;
+            opacity: 0;
+            z-index: 9;
+            transition: all;
+        }
+
+            .Intro-Text1 {
+                padding-top: 100px;
+            }
+            .Intro-Text2 {
+                padding-top: 130px;
+            }
+            .Intro-Text3 {
+                padding-top: 160px;
+            }
+
+        .Intro-Description {
+            font-size: 14px;
+            line-height: 24px;
+            width: 330px;
+            text-align: center;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 150px;
+        }
+
+        .Intro-Button {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 60px;
+            height: 50px;
+            width: 140px;
+            border: 1px solid rgb(240, 240, 240);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: all .1s ease-in;
+        }
+
+            .Intro-Button:hover {
+                background-color: rgb(240, 240, 240);
+                color: #141414;
+                border: none;
+                font-weight: 900;
+            }
+
+        .IntroSlide {
+            position: absolute;
+            width: 50%;
+            height: 100%;
+            background-color: rgb(240, 240, 240);
+            top: 0;
+            bottom: 0;
+            z-index: 5;
+            transition: all;
+        }
+
+            .IntroSlideLeft {
+                left: 0;
+            }
+            .IntroSlideRight {
+                right: 0;
+            }

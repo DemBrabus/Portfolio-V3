@@ -16322,252 +16322,83 @@ var _EasePack = require("./EasePack.js");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
-},{"./TweenLite.js":"../node_modules/gsap/TweenLite.js","./TweenMaxBase.js":"../node_modules/gsap/TweenMaxBase.js","./TimelineLite.js":"../node_modules/gsap/TimelineLite.js","./TimelineMax.js":"../node_modules/gsap/TimelineMax.js","./AttrPlugin.js":"../node_modules/gsap/AttrPlugin.js","./BezierPlugin.js":"../node_modules/gsap/BezierPlugin.js","./ColorPropsPlugin.js":"../node_modules/gsap/ColorPropsPlugin.js","./CSSPlugin.js":"../node_modules/gsap/CSSPlugin.js","./CSSRulePlugin.js":"../node_modules/gsap/CSSRulePlugin.js","./DirectionalRotationPlugin.js":"../node_modules/gsap/DirectionalRotationPlugin.js","./EaselPlugin.js":"../node_modules/gsap/EaselPlugin.js","./EndArrayPlugin.js":"../node_modules/gsap/EndArrayPlugin.js","./ModifiersPlugin.js":"../node_modules/gsap/ModifiersPlugin.js","./PixiPlugin.js":"../node_modules/gsap/PixiPlugin.js","./RoundPropsPlugin.js":"../node_modules/gsap/RoundPropsPlugin.js","./ScrollToPlugin.js":"../node_modules/gsap/ScrollToPlugin.js","./TextPlugin.js":"../node_modules/gsap/TextPlugin.js","./Draggable.js":"../node_modules/gsap/Draggable.js","./EasePack.js":"../node_modules/gsap/EasePack.js"}],"scripts/Portfolio/Windows.js":[function(require,module,exports) {
+},{"./TweenLite.js":"../node_modules/gsap/TweenLite.js","./TweenMaxBase.js":"../node_modules/gsap/TweenMaxBase.js","./TimelineLite.js":"../node_modules/gsap/TimelineLite.js","./TimelineMax.js":"../node_modules/gsap/TimelineMax.js","./AttrPlugin.js":"../node_modules/gsap/AttrPlugin.js","./BezierPlugin.js":"../node_modules/gsap/BezierPlugin.js","./ColorPropsPlugin.js":"../node_modules/gsap/ColorPropsPlugin.js","./CSSPlugin.js":"../node_modules/gsap/CSSPlugin.js","./CSSRulePlugin.js":"../node_modules/gsap/CSSRulePlugin.js","./DirectionalRotationPlugin.js":"../node_modules/gsap/DirectionalRotationPlugin.js","./EaselPlugin.js":"../node_modules/gsap/EaselPlugin.js","./EndArrayPlugin.js":"../node_modules/gsap/EndArrayPlugin.js","./ModifiersPlugin.js":"../node_modules/gsap/ModifiersPlugin.js","./PixiPlugin.js":"../node_modules/gsap/PixiPlugin.js","./RoundPropsPlugin.js":"../node_modules/gsap/RoundPropsPlugin.js","./ScrollToPlugin.js":"../node_modules/gsap/ScrollToPlugin.js","./TextPlugin.js":"../node_modules/gsap/TextPlugin.js","./Draggable.js":"../node_modules/gsap/Draggable.js","./EasePack.js":"../node_modules/gsap/EasePack.js"}],"scripts/Global/Nav.js":[function(require,module,exports) {
 "use strict";
 
 var _all = require("gsap/all");
 
-//Window Scripts
 (function () {
-  //GSAP ------------------------ -------------------------
-  //Variables --------------- ------- ---
-  var ProjectLink1 = document.getElementById('ProjectLink1');
-  var ProjectLink2 = document.getElementById('ProjectLink2');
-  var ProjectLink3 = document.getElementById('ProjectLink3');
-  var ProjectLink4 = document.getElementById('ProjectLink4');
-  var ProjectLink5 = document.getElementById('ProjectLink5');
-  var Cloud1 = document.getElementById('Cloud1');
-  var Cloud2 = document.getElementById('Cloud2');
-  var Cloud3 = document.getElementById('Cloud3');
-  var Cloud4 = document.getElementById('Cloud4');
-  var Cloud5 = document.getElementById('Cloud5'); //Variables --------------- ------- ---
-  //Timelines ----------- ------ ---- -- -
-
-  var Cloud1Tl = new _all.TimelineMax();
-  Cloud1Tl.to(Cloud1, .3, {
-    opacity: .85,
-    ease: _all.Power1.easeOut
-  });
-  Cloud1Tl.pause();
-  var Cloud2Tl = new _all.TimelineMax();
-  Cloud2Tl.to(Cloud2, .3, {
-    opacity: .85,
-    ease: _all.Power1.easeOut
-  });
-  Cloud2Tl.pause();
-  var Cloud3Tl = new _all.TimelineMax();
-  Cloud3Tl.to(Cloud3, .3, {
-    opacity: .85,
-    ease: _all.Power1.easeOut
-  });
-  Cloud3Tl.pause();
-  var Cloud4Tl = new _all.TimelineMax();
-  Cloud4Tl.to(Cloud4, .3, {
-    opacity: .85,
-    ease: _all.Power1.easeOut
-  });
-  Cloud4Tl.pause();
-  var Cloud5Tl = new _all.TimelineMax();
-  Cloud5Tl.to(Cloud5, .3, {
-    opacity: .85,
-    ease: _all.Power1.easeOut
-  });
-  Cloud5Tl.pause(); //Functions ----------- ------ ---- -- -
-
-  var Project1Hover = function Project1Hover() {
-    Cloud1Tl.play();
-  };
-
-  var Project1Disable = function Project1Disable() {
-    Cloud1Tl.reverse();
-  };
-
-  var Project2Hover = function Project2Hover() {
-    Cloud2Tl.play();
-  };
-
-  var Project2Disable = function Project2Disable() {
-    Cloud2Tl.reverse();
-  };
-
-  var Project3Hover = function Project3Hover() {
-    Cloud3Tl.play();
-  };
-
-  var Project3Disable = function Project3Disable() {
-    Cloud3Tl.reverse();
-  };
-
-  var Project4Hover = function Project4Hover() {
-    Cloud4Tl.play();
-  };
-
-  var Project4Disable = function Project4Disable() {
-    Cloud4Tl.reverse();
-  };
-
-  var Project5Hover = function Project5Hover() {
-    Cloud5Tl.play();
-  };
-
-  var Project5Disable = function Project5Disable() {
-    Cloud5Tl.reverse();
-  };
-
-  ProjectLink1.addEventListener('mouseover', Project1Hover);
-  ProjectLink1.addEventListener('mouseleave', Project1Disable);
-  ProjectLink2.addEventListener('mouseover', Project2Hover);
-  ProjectLink2.addEventListener('mouseleave', Project2Disable);
-  ProjectLink3.addEventListener('mouseover', Project3Hover);
-  ProjectLink3.addEventListener('mouseleave', Project3Disable);
-  ProjectLink4.addEventListener('mouseover', Project4Hover);
-  ProjectLink4.addEventListener('mouseleave', Project4Disable);
-  ProjectLink5.addEventListener('mouseover', Project5Hover);
-  ProjectLink5.addEventListener('mouseleave', Project5Disable);
-})();
-},{"gsap/all":"../node_modules/gsap/all.js"}],"scripts/Portfolio/IntroScene.js":[function(require,module,exports) {
-"use strict";
-
-var _all = require("gsap/all");
-
-//Wrap
-(function () {
-  //Variables ---------------------------------
-  var Body = document.getElementById('Body');
-  var LandingIntro = document.getElementById('Landing-Intro');
-  var LandingIntroText1 = document.getElementById('Landing-Intro-Text1');
-  var LandingIntroText2 = document.getElementById('Landing-Intro-Text2');
-  var LandingIntroText3 = document.getElementById('Landing-Intro-Text3');
-  var LandingEnterButton = document.getElementById('Landing-Intro-Button');
-  var DivideLine = document.getElementById('Landing-Intro-Divide-Line');
-  var SlideLeft = document.getElementById('Landing-IntroSlideLeft');
-  var SlideRight = document.getElementById('LandingIntroSlideRight');
-  var GroundZero = document.getElementById('GroundZero');
-  var ScrollBar = document.getElementById('ScrollBar');
-  var Logo = document.getElementById('Portfolio-Logo');
+  //Nav Animation
+  //GSAP ------------------- -------------------
+  //Variables -------- ------ ---- -- -
   var Nav = document.getElementById('Nav');
-  var PortfolioTitle = document.getElementById('PortfolioTitle');
-  var TitleHide = document.getElementById('Title-Hide');
-  var Context = document.getElementById('PortfolioContext');
-  var ProjectsTitle = document.getElementById('PortfolioProjectsTitle');
-  var Project1 = document.getElementById('Project1');
-  var Project2 = document.getElementById('Project2');
-  var Project3 = document.getElementById('Project3');
-  var Project4 = document.getElementById('Project4');
-  var Project5 = document.getElementById('Project5'); //Scenes ----------------------------------
+  var NavExit = document.getElementById('Nav-Exit');
+  var NavDivideLine = document.getElementById('Nav-Divide-Line');
+  var NavList = document.getElementById('Nav-List');
+  var NavLink1 = document.getElementById('Nav-Link1');
+  var NavLink2 = document.getElementById('Nav-Link2');
+  var NavLink3 = document.getElementById('Nav-Link3');
+  var NavLink4 = document.getElementById('Nav-Link4');
+  var NavInfo = document.getElementById('Nav-Info');
+  var MenuIcon = document.getElementById('Menu-Icon-Wrap');
+  var MenuIconBar1 = document.getElementById('Menu-Icon-Bar1');
+  var MenuIconBar2 = document.getElementById('Menu-Icon-Bar2'); //Variables -------- ------ ---- -- -
+  //Timeline -- -- -- -- 
 
-  var EnterCoverScene = new _all.TimelineMax();
-  EnterCoverScene.to(LandingIntroText1, .75, {
+  var NavAnimation = new _all.TimelineMax();
+  NavAnimation.add('wave1').to(MenuIconBar1, .4, {
+    top: '50%',
+    ease: Expo.easeIn
+  }, 'wave1').to(MenuIconBar2, .4, {
+    top: '50%',
+    ease: Expo.easeIn
+  }, 'wave1').to(Nav, .01, {
+    display: 'block'
+  }, 'wave1').to(NavExit, .5, {
     opacity: 1,
-    ease: _all.Power1.easeInOut,
-    delay: .8
-  }).to(LandingIntroText2, .75, {
+    ease: _all.Power0.easeIn,
+    delay: .1
+  }, 'wave1').to(Nav, .6, {
     opacity: 1,
-    ease: _all.Power1.easeInOut
-  }, '-=.5').to(LandingIntroText3, .75, {
+    ease: _all.Power0.easeIn
+  }, 'wave1').to(NavDivideLine, .6, {
     opacity: 1,
-    ease: _all.Power1.easeInOut
-  }, '-=.5').to(LandingEnterButton, .75, {
+    ease: _all.Power0.easeIn
+  }).to(NavDivideLine, .16, {
+    top: 0,
+    ease: _all.Power0.easeIn
+  }, '-=.5').to(NavList, .6, {
     opacity: 1,
-    ease: _all.Power1.easeInOut
+    ease: _all.Power0.easeIn
+  }, '-=.5').to(NavInfo, .6, {
+    opacity: 1,
+    ease: _all.Power0.easeIn
   }, '-=.5');
-  var ExitCoverScene = new _all.TimelineMax();
-  ExitCoverScene.to(LandingIntroText1, .6, {
-    opacity: 0,
-    x: '-100%',
-    ease: _all.Power1.easeInOut,
-    delay: .8
-  }).to(LandingIntroText2, .6, {
-    opacity: 0,
-    x: '-100%',
-    ease: _all.Power1.easeInOut
-  }, '-=.5').to(LandingIntroText3, .6, {
-    opacity: 0,
-    x: '-100%',
-    ease: _all.Power1.easeInOut
-  }, '-=.5').to(LandingEnterButton, .75, {
-    opacity: 0,
-    y: '100%',
-    ease: _all.Power1.easeInOut
-  }, '-=.5');
-  ExitCoverScene.pause(); //Trigger Exit Cover Scene
+  NavAnimation.pause(); //Function
 
-  var EnterSite = function EnterSite(e) {
-    ExitCoverScene.play();
-    LandingIntroScene.play();
-  }; //Listener
+  var AnimateNavIn = function AnimateNavIn(e) {
+    NavAnimation.play();
+  };
+
+  var AnimateNavOut = function AnimateNavOut(e) {
+    NavAnimation.reverse();
+  }; //Listeners
+  //In
 
 
-  LandingEnterButton.addEventListener('click', EnterSite);
-  var LandingIntroScene = new _all.TimelineMax();
-  LandingIntroScene.to(DivideLine, .6, {
-    bottom: 0,
-    ease: _all.Power2.easeInOut,
-    delay: 2.5
-  }).to(DivideLine, .2, {
-    opacity: 0
-  }).add('wave1').to(SlideLeft, 1, {
-    x: '-100%',
-    ease: Expo.easeInOut
-  }, 'wave1').to(SlideRight, 1, {
-    x: '100%',
-    ease: Expo.easeInOut
-  }, 'wave1').to(DivideLine, .6, {
-    bottom: '-100%',
-    ease: Expo.easeInOut,
-    delay: .15
-  }, '-=.3').to(ScrollBar, .01, {
-    opacity: 1
-  }).add('wave2').to(GroundZero, .01, {
-    opacity: 1
-  }).to(LandingIntro, .01, {
-    display: 'none'
-  }).to(Logo, .6, {
-    opacity: 1,
-    ease: _all.Power1.easeIn
-  }, 'wave2').to(Nav, .6, {
-    opacity: 1,
-    ease: _all.Power1.easeIn
-  }, 'wave2').set(Body, {
-    className: '+=OverFlow'
-  }).to(PortfolioTitle, .6, {
-    opacity: 1,
-    ease: _all.Power1.easeIn
-  }).to(ProjectsTitle, .6, {
-    opacity: 1,
-    ease: _all.Power1.easeIn
-  }, '-=.4').to(Context, .6, {
-    opacity: 1,
-    ease: _all.Power1.easeIn
-  }, '-=.4').to(Project1, .6, {
-    opacity: 1,
-    ease: _all.Power1.easeIn
-  }, '-=.4').to(Project2, .6, {
-    opacity: 1,
-    ease: _all.Power1.easeIn
-  }, '-=.4').to(Project3, .6, {
-    opacity: 1,
-    ease: _all.Power1.easeIn
-  }, '-=.4').to(Project4, .6, {
-    opacity: 1,
-    ease: _all.Power1.easeIn
-  }, '-=.4').to(Project5, .6, {
-    opacity: 1,
-    ease: _all.Power1.easeIn
-  }, '-=.4');
-  LandingIntroScene.pause();
+  MenuIcon.addEventListener('click', AnimateNavIn); //Out
+
+  NavExit.addEventListener('click', AnimateNavOut);
 })();
 },{"gsap/all":"../node_modules/gsap/all.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
-var _Windows = _interopRequireDefault(require("./scripts/Portfolio/Windows"));
-
-var _IntroScene = _interopRequireDefault(require("./scripts/Portfolio/IntroScene"));
+var _Nav = _interopRequireDefault(require("./scripts/Global/Nav"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 console.log('Portfolio - Final');
-},{"./scripts/Portfolio/Windows":"scripts/Portfolio/Windows.js","./scripts/Portfolio/IntroScene":"scripts/Portfolio/IntroScene.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./scripts/Global/Nav":"scripts/Global/Nav.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -16595,7 +16426,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52469" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63052" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

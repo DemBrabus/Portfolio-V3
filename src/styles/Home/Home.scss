@@ -15,77 +15,13 @@
             right: 0;
             bottom: 0;
             // opacity: 0;
-            z-index: 2;
+            z-index: 600;
         }
             .Landing-Intro-Wrap {
                 width: 100%;
                 height: 100%;
                 position: relative;
-            }
-
-                .Landing-Intro-Text {
-                    position: absolute;
-                    left: 0;
-                    padding-left: 10%;
-                    color: #141414;
-                    font-size: 16px;
-                    font-weight: 900;
-                    white-space: nowrap;
-                    z-index: 2;
-                    opacity: 0;
-                    transition: all;
-                }   
-                    .Landing-Intro-Text1 {
-                        top: 150px;
-                    }
-                    .Landing-Intro-Text2 {
-                        top: 190px;
-                    }
-                    .Landing-Intro-Text3 {
-                        top: 230px;
-                    }
-
-                .Landing-Intro-Button {
-                    position: absolute;
-                    left: 50%;
-                    bottom: 10%;
-                    transform: translateX(-50%);
-                    color: #141414;
-                    font-weight: 900;
-                    border: 1px solid #141414;
-                    border-radius: 2px;
-                    background-color: transparent;
-                    width: 120px;
-                    height: 50px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    z-index: 7;
-                    cursor: pointer;
-                    opacity: 0;
-                    transition: all;
-                }
-                // .Landing-Intro-Text {
-                //     position: absolute;
-                //     left: 50%;
-                //     top: 65%;
-                //     transform: translate(-50%, 35%);
-                //     color: #141414;
-                //     z-index: 2;
-                //     transition: all;
-                // }
-
-                .Landing-Intro-Divide-Line {
-                    position: absolute;
-                    bottom: -100%;
-                    // bottom: 0;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    width: 1px;
-                    height: 100%;
-                    background-color: #141414;
-                    z-index: 100;
-                }
+            }  
 
                 .Landing-IntroSlide {
                     position: absolute;
@@ -98,18 +34,12 @@
                     z-index: 1;
                 }
                     .Landing-IntroSlideLeft {
-                        left: 0;
+                        left: -100%;
                     }
 
                     .Landing-IntroSlideRight {
-                        right: 0;
+                        right: -100%;
                     }
-
-@media screen and (max-width: 618px){
-    .Landing-Intro-Text {
-        font-size: 14px;
-    }
-}
 
 
         //Windows
@@ -232,7 +162,6 @@
         .PortfolioTitle {
             margin-top: 100px;
             font-size: 130px;
-            opacity: 0;
             display: inline-block;
             transition: opacity;
         }
@@ -258,7 +187,6 @@
             margin-top: 70px;
             display: flex;
             justify-content: space-between;
-            opacity: 0;
             transition: opacity;
         }
 
@@ -301,7 +229,7 @@
 
         /* -- Project Links ------------------------ */
             .PortfolioProjects {
-                margin-top: 110px;
+                margin-top: 250px;
                 transition: margin-top .5s ease-in-out;
             }
             .PortfolioProjectsTitle {
@@ -309,7 +237,6 @@
                 font-weight: 200;
                 text-transform: uppercase;
                 margin-bottom: 20px;
-                opacity: 0;
                 transition: opacity;
             }
 
@@ -320,7 +247,6 @@
             .Project {
                 margin-bottom: 50px;
                 position: relative;
-                opacity: 0;
                 transition: opacity;
             }
 
@@ -340,13 +266,14 @@
                 font-style: normal;
                 text-transform: uppercase;
                 outline: none;
+                color: rgb(240, 240, 240);
                 opacity: 1;
                 white-space: nowrap;
                 transition: transform opacity 2s ease-in-out;
 
             }
                     .ProjectLink:hover {
-                        opacity: .6;
+                        opacity: .5;
                     }
                     
 
@@ -360,59 +287,59 @@
 
                     
 
-                @media screen and (max-width: 1732px){
-                    .PortfolioProjects {
-                        margin-top: 170px;
-                    }
-                }
+@media screen and (max-width: 1732px){
+    .PortfolioProjects {
+        margin-top: 140px;
+    }
+}
 
-                @media screen and (max-width: 1261px){
-                    .PortfolioProjects {
-                        margin-top: 200px;
-                    }
-                }
+@media screen and (max-width: 1261px){
+    .PortfolioProjects {
+        margin-top: 200px;
+    }
+}
 
-                @media screen and (max-width: 1020px){
-                    .ProjectLink {
-                        font-size: 14vw;
-                    }
-                }
+@media screen and (max-width: 1020px){
+    .ProjectLink {
+        font-size: 14vw;
+    }
+}
 
-                 @media screen and (max-width: 800px){
-                    .PortfolioProjects {
-                        margin-top: 100px;
-                    }
-                }
+    @media screen and (max-width: 800px){
+    .PortfolioProjects {
+        margin-top: 100px;
+    }
+}
 
-                @media screen and (max-width: 696px){
-                    .PortfolioProjects {
-                        margin-top: 140px;
-                    }
-                }
-                
+@media screen and (max-width: 696px){
+    .PortfolioProjects {
+        margin-top: 140px;
+    }
+}
 
-                @media screen and (max-width: 650px){
-                    .ProjectNumber {
-                        font-size: 2vw;
-                        margin-top: -3px;
-                    }
-                    .ProjectDescription {
-                        font-size: 2vw;
-                        margin-top: 5px;
-                    }
-                }
 
-                @media screen and (max-width: 550px){
-                    .PortfolioProjects {
-                        margin-top: 80px;
-                    }
-                }
+@media screen and (max-width: 650px){
+    .ProjectNumber {
+        font-size: 2vw;
+        margin-top: -3px;
+    }
+    .ProjectDescription {
+        font-size: 2vw;
+        margin-top: 5px;
+    }
+}
 
-                @media screen and (max-height: 800px) {
-                    .PortfolioProjects {
-                        margin-top: 130px;
-                    }
-                }
+@media screen and (max-width: 550px){
+    .PortfolioProjects {
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    .PortfolioProjects {
+        margin-top: 130px;
+    }
+}
 
 
 
