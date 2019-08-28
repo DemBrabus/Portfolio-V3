@@ -395,6 +395,10 @@ a {
     .Nav-Info-Email {
         font-size: 12px;
     }
+    .Nav-Projects-Close {
+        left: 10%;
+        top: 50px;
+    }
 }
 
 @media screen and (max-height: 550px){
@@ -422,7 +426,6 @@ a {
     }
     .Nav-Projects-Close {
         left: 10%;
-        top: 100px;
     }
 }
 

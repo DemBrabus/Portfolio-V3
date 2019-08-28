@@ -93,5 +93,11 @@
   .Intro-Description {
     width: 300px; } }
 
+@media screen and (max-height: 700px) {
+  .Intro-Button {
+    bottom: 90px; }
+  .Intro-Description {
+    bottom: 180px; } }
+
 
 /*# sourceMappingURL=/Intro.98635dbf.css.map */

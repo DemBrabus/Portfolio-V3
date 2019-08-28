@@ -326,7 +326,10 @@ a {
   .Nav-Info-Links {
     font-size: 12px; }
   .Nav-Info-Email {
-    font-size: 12px; } }
+    font-size: 12px; }
+  .Nav-Projects-Close {
+    left: 10%;
+    top: 50px; } }
 
 @media screen and (max-height: 550px) {
   .Nav-Projects-Link {
@@ -344,8 +347,7 @@ a {
   .Nav-Divide-Line {
     display: none; }
   .Nav-Projects-Close {
-    left: 10%;
-    top: 100px; } }
+    left: 10%; } }
 
 @media screen and (max-width: 650px) {
   .Nav-Exit {
