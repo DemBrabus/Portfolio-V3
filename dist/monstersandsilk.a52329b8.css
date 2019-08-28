@@ -4,14 +4,24 @@
   background-size: cover;
   background-repeat: no-repeat; }
 
+.Max-WidthMS {
+  max-width: 500px; }
+
 .MonstersAndSilk-Mock1-BG {
-  background: url("/Moch1.551fd38f.jpg");
+  background: url("/MonstersAndSilk-Mockup1.9e92c86c.jpg");
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat; }
 
+.MSPadding {
+  padding: 0 7%; }
+
+@media screen and (max-width: 1100px) {
+  .MSPadding {
+    height: 60vh; } }
+
 .MonstersAndSilk-Mock2-BG {
-  background: url("/IphoneMockUp-Specialized.1daaaccc.jpg");
+  background: url("/MonstersAndSilk-Mobile-MochUp.9a009630.jpg");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat; }

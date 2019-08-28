@@ -49,15 +49,15 @@ import { TimelineMax, Power0 } from 'gsap/all';
                         .to(NavExit, .5, {
                             opacity: 1, 
                             ease: Power0.easeIn, 
-                            delay: .1}, 'wave1')
+                            delay: .2}, 'wave1')
                         .to(Nav, .6, {
                             opacity: 1, 
                             ease: Power0.easeIn}, 'wave1')
 
                         .to(NavDivideLine, .6, {
                             opacity: 1, 
-                            ease: Power0.easeIn}, )
-                        .to(NavDivideLine, .16, {
+                            ease: Power0.easeIn, delay: .15}, )
+                        .to(NavDivideLine, .18, {
                             top: 0, 
                             ease: Power0.easeIn}, '-=.5')
                     

@@ -16348,8 +16348,6 @@ var _all = require("gsap/all");
     opacity: 1
   }, 'wave2').set(Body, {
     className: '+=OverFlow'
-  }, 'wave2').set(Nav, {
-    opacity: 1
   }, 'wave2').add('wave3').to(IntroSlide2, 1, {
     top: '100%',
     ease: _all.Expo.easeInOut,
@@ -16404,14 +16402,15 @@ var _all = require("gsap/all");
   }, 'wave1').to(NavExit, .5, {
     opacity: 1,
     ease: _all.Power0.easeIn,
-    delay: .1
+    delay: .2
   }, 'wave1').to(Nav, .6, {
     opacity: 1,
     ease: _all.Power0.easeIn
   }, 'wave1').to(NavDivideLine, .6, {
     opacity: 1,
-    ease: _all.Power0.easeIn
-  }).to(NavDivideLine, .16, {
+    ease: _all.Power0.easeIn,
+    delay: .15
+  }).to(NavDivideLine, .18, {
     top: 0,
     ease: _all.Power0.easeIn
   }, '-=.5').to(NavList, .6, {
@@ -16542,7 +16541,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54009" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54090" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

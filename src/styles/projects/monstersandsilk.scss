@@ -1,26 +1,38 @@
 
 
 //Intro Section
-    .MonstersAndSilk-Intro-BG {
-        background: url('../../assets/images/MandSThumbNail.jpg');
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
-
-//MockUp 1
-.MonstersAndSilk-Mock1-BG {
-    background: url('../../assets/images/specialized/Moch1.jpg');
+.MonstersAndSilk-Intro-BG {
+    background: url('../../assets/images/MandSThumbNail.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+.Max-WidthMS {
+    max-width: 500px;
+}
+
+//MockUp 1
+.MonstersAndSilk-Mock1-BG {
+    background: url('../../assets/images/MonstersAndSilk-Mockup1.jpg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+    .MSPadding {
+        padding: 0 7%;
+    }
+
+@media screen and (max-width: 1100px){
+    .MSPadding {
+        height: 60vh;
+    }
+}
+
 
 //MockUp 2
 .MonstersAndSilk-Mock2-BG {
-    background: url('../../assets/images/specialized/IphoneMockUp-Specialized.jpg');
+    background: url('../../assets/images/MonstersAndSilk/MonstersAndSilk-Mobile-MochUp.jpg');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;

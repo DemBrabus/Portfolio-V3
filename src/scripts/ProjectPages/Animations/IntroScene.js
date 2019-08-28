@@ -25,16 +25,11 @@ import { TweenMax, TimelineMax, Power1, CustomEase, Power2, Expo } from 'gsap/al
             
                 .to(GroundZero, .01, {opacity: 1}, 'wave2')
                 .set(Body, {className: '+=OverFlow'}, 'wave2')
-                .set(Nav, {opacity: 1}, 'wave2')
 
             .add('wave3')
                 .to(IntroSlide2, 1, {top: '100%', ease:Expo.easeInOut, delay: .3}, 'wave3')
                 .to(IntroSlide1, 1, {top: '100%', ease:Expo.easeInOut, delay: .37}, 'wave3')
                 .set(ProjectIntroWrap, {display: 'none'})
-                
-
-            
-
 
         ;
 

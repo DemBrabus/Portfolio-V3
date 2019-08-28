@@ -11,7 +11,11 @@ html, body {
   background-color: #141414;
   position: relative;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  overflow: hidden; }
+
+.OverFlow {
+  overflow-y: scroll; }
 
 .BgLight {
   background-color: #f0f0f0; }
@@ -35,7 +39,7 @@ a {
   height: 100%;
   position: relative;
   background-color: transparent;
-  overflow-x: hidden; }
+  opacity: 0; }
 
 .ScrollBar {
   position: fixed;
