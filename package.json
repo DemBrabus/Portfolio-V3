@@ -14,7 +14,7 @@
   "author": "Daniel Montoya",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "parcel-bundler": "^1.12.3",
     "shx": "^0.3.2"
   },
